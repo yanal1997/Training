@@ -15,7 +15,6 @@ import javafx.stage.Stage;
 public class CalculatorApp extends Application {
 	/*
 	 * this is simple calculator class
-	 * gfgfg
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
