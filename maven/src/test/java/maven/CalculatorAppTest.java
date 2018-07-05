@@ -1,16 +1,19 @@
 package maven;
 
-import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 
 public class CalculatorAppTest {
 	String[] test = new String[15];
 	String[] result = new String[15];
 	CalculatorApp calcutator = new CalculatorApp();
 
-	@Before
+	@BeforeClass
 	public void setUp() {
 		test[0] = "5+2";
 		result[0] = "7.0";
@@ -44,56 +47,56 @@ public class CalculatorAppTest {
 
 	@Test
 	public void addTwoNumber() {
-	    assertEquals("add two number (5+3) ", result[0], calcutator.operation(test[0]));
+	   Assert. assertEquals( result[0], calcutator.operation(test[0]),"add two number  ");
 	}
 	@Test 
 	public void multiplyTwoNumber(){
-		assertEquals("multiply two number (5*2)", result[1], calcutator.operation(test[1]));
+		Assert.assertEquals( result[1], calcutator.operation(test[1]),"multiply two number (5*2)");
 	}
 	@Test
 	public void divideTwoNumber() {
-		assertEquals("dived two number (6/3)", result[2],calcutator.operation(test[2]));//Dived 
+		Assert.assertEquals( result[2],calcutator.operation(test[2]),"dived two number (6/3)");//Dived 
 	}
 	@Test
 	public void subtractTwoNumber() {
-		assertEquals("Subtract two number (10-3)", result[3],calcutator.operation(test[3]));
+		Assert.assertEquals( result[3],calcutator.operation(test[2]),"Subtract two number (10-3)");
 	}
 	@Test
 	public void subtractTwoNumberSecondNumberTheBiggest() {
-		assertEquals("Subtraction two number second number grater than first (5-2)", result[4],calcutator.operation(test[4]));
+		Assert.assertEquals( result[4],calcutator.operation(test[4]),"Subtraction two number second number grater than first (5-2)");
 	}
 	@Test
 	public void enterEquationWithError(){//enter % or 5t+3
-		assertEquals("enter equation with equale sign ( 5+3= )", result[5], calcutator.operation(test[5]));
+		Assert.assertEquals( result[5], calcutator.operation(test[5]),"enter equation with equale sign ( 5+3= )");
 	}
 	@Test
 	public void enterNumber(){
-		assertEquals("enter just enter number (55)",result[6], calcutator.operation(test[6]));
+		Assert.assertEquals(result[6], calcutator.operation(test[6]),"enter just enter number (55)");
 	}
 	@Test 
 	public void divideOddByEven(){
-		assertEquals("dived odd by even number (5/2)",result[7],calcutator.operation(test[7]));
+		Assert.assertEquals(result[7],calcutator.operation(test[7]),"dived odd by even number (5/2)");
 	}
 	@Test
 	public void divideByZero(){
-		assertEquals("dived by zero (9/0)",result[8],calcutator.operation(test[8]));
+		Assert.assertEquals(result[8],calcutator.operation(test[8]),"dived by zero (9/0)");
 	}
 	@Test
 	public void enterEquationWithoutNumber(){
-		assertEquals("enter equation with error (5eew+3) ",result[9],calcutator.operation(test[9]));
+		Assert.assertEquals(result[9],calcutator.operation(test[9]),"enter equation with error (5eew+3) ");
 	}
 	@Test 
 	public void enterDoubleEqualSign(){
-		assertEquals("enter  double equal sign(5+3==)",result[10],calcutator.operation(test[10]));
+		Assert.assertEquals(result[10],calcutator.operation(test[10]),"enter  double equal sign(5+3==)");
 	}
 	@Test
 	public void enterOneOpretor(){
-		assertEquals("enter one opretor (*)",result[11],calcutator.operation(test[11]));
+		Assert.assertEquals(result[11],calcutator.operation(test[11]),"enter one opretor (*)");
 	}
 	@Test
 	public void enterDoubleOpretor(){
 		
-		assertEquals("enter double  opretor (5**5)",result[12],calcutator.operation(test[12]));
+		Assert.assertEquals(result[12],calcutator.operation(test[12]),"enter double  opretor (5**5)");
 	}
 	
 	

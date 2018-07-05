@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: maven.CalculatorAppTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.524 sec <<< FAILURE!
+subtractTwoNumber(maven.CalculatorAppTest)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: Subtract two number (10-3) expected [3.0] but found [2.0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at maven.CalculatorAppTest.subtractTwoNumber(CalculatorAppTest.java:62)
+

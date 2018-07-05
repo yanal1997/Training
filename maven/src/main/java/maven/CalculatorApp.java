@@ -24,7 +24,6 @@ public class CalculatorApp extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-
 		// TODO Auto-generated method stub
 		BorderPane bPane = new BorderPane();// this is main border pane
 		bPane.setStyle("-fx-background-color: linear-gradient(#4169E1  , #4169E1);");// change
