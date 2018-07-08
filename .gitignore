@@ -7,3 +7,6 @@ test-output/
 # Ada Library Information
 *.ali
 *.html
+testNG/test-output/testng-results.xml
+
+
