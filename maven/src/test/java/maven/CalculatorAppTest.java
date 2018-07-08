@@ -59,7 +59,7 @@ public class CalculatorAppTest {
 	}
 	@Test
 	public void subtractTwoNumber() {
-		Assert.assertEquals( result[3],calcutator.operation(test[2]),"Subtract two number (10-3)");
+		Assert.assertEquals( result[3],calcutator.operation(test[3]),"Subtract two number (10-3)");
 	}
 	@Test
 	public void subtractTwoNumberSecondNumberTheBiggest() {
