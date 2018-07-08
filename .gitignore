@@ -1,4 +1,4 @@
-test-output\
+test-output/
 maven/test-output/junitreports/TEST-maven.CalculatorAppTest.xml
 
 maven/test-output/testng-results.xml
