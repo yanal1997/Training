@@ -1,65 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="140" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+  <suite name="Default suite" duration-ms="109" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="140" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+    <test name="Default test" duration-ms="109" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
       <class name="maven.CalculatorAppTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="setUp" is-config="true" duration-ms="16" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="setUp" is-config="true" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="addTwoNumber" duration-ms="15" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="addTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="addTwoNumber" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTwoNumber -->
-        <test-method status="PASS" signature="divideByZero()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideByZero" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- divideByZero -->
-        <test-method status="PASS" signature="enterDoubleEqualSign()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterDoubleEqualSign" duration-ms="16" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterDoubleEqualSign -->
-        <test-method status="PASS" signature="divideTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideTwoNumber" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="divideTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideTwoNumber" duration-ms="16" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- divideTwoNumber -->
-        <test-method status="PASS" signature="divideOddByEven()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideOddByEven" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="divideOddByEven()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideOddByEven" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- divideOddByEven -->
-        <test-method status="PASS" signature="enterDoubleOpretor()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterDoubleOpretor" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="divideByZero()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="divideByZero" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterDoubleOpretor -->
-        <test-method status="PASS" signature="enterEquationWithError()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterEquationWithError" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        </test-method> <!-- divideByZero -->
+        <test-method status="PASS" signature="enterEquationWithError()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterEquationWithError" duration-ms="15" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterEquationWithError -->
-        <test-method status="PASS" signature="enterEquationWithoutNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterEquationWithoutNumber" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="enterDoubleEqualSign()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterDoubleEqualSign" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDoubleEqualSign -->
+        <test-method status="PASS" signature="enterDoubleOpretor()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterDoubleOpretor" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDoubleOpretor -->
+        <test-method status="PASS" signature="enterEquationWithoutNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterEquationWithoutNumber" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterEquationWithoutNumber -->
-        <test-method status="PASS" signature="enterOneOpretor()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterOneOpretor" duration-ms="16" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="enterOneOpretor()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterOneOpretor" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterOneOpretor -->
-        <test-method status="PASS" signature="enterNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterNumber" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="enterNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="enterNumber" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterNumber -->
-        <test-method status="PASS" signature="multiplyTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="multiplyTwoNumber" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multiplyTwoNumber -->
-        <test-method status="PASS" signature="subtractTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="subtractTwoNumber" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="FAIL" signature="subtractTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="subtractTwoNumber" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Subtract two number (10-3) expected [3.0] but found [2.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Subtract two number (10-3) expected [3.0] but found [2.0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at maven.CalculatorAppTest.subtractTwoNumber(CalculatorAppTest.java:62)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtractTwoNumber -->
-        <test-method status="PASS" signature="subtractTwoNumberSecondNumberTheBiggest()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="subtractTwoNumberSecondNumberTheBiggest" duration-ms="0" started-at="2018-07-05T12:25:55Z" finished-at="2018-07-05T12:25:55Z">
+        <test-method status="PASS" signature="multiplyTwoNumber()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="multiplyTwoNumber" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplyTwoNumber -->
+        <test-method status="PASS" signature="subtractTwoNumberSecondNumberTheBiggest()[pri:0, instance:maven.CalculatorAppTest@6767c1fc]" name="subtractTwoNumberSecondNumberTheBiggest" duration-ms="0" started-at="2018-07-08T06:40:19Z" finished-at="2018-07-08T06:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subtractTwoNumberSecondNumberTheBiggest -->
