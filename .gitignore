@@ -1,3 +1,3 @@
 test-output\
-*.html
-*.xml
+.html
+.xml
