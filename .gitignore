@@ -15,3 +15,5 @@ target/
 classes/
 test-output/
 
+*.html
+testNG/test-output/old/Default suite/groups.html
