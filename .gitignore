@@ -10,3 +10,8 @@ test-output/
 testNG/test-output/testng-results.xml
 
 
+*.class
+target/
+classes/
+test-output/
+

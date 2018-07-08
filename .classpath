@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="maven/src/main/java"/>
+	<classpathentry kind="src" path="maven/src/test/java"/>
+	<classpathentry kind="src" path="testNG/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="maven/target/classes"/>
+</classpath>
