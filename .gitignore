@@ -1,4 +1,4 @@
-test-output/
+*.xml
 *.html
 *.com
 *.class
@@ -21,7 +21,6 @@ test-output/
 *.log
 *.sql
 *.sqlite
-
 # OS generated files #
 ######################
 .DS_Store
