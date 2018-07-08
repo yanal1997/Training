@@ -2,73 +2,73 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+  <suite name="Default suite" duration-ms="40" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+    <test name="Default test" duration-ms="40" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
       <class name="testNG.TestNGAnnotation2">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforSuite" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforSuite" is-config="true" duration-ms="13" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforMethod()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforMethod" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="beforMethod()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforMethod" is-config="true" duration-ms="0" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforMethod -->
-        <test-method status="PASS" signature="beforCalss()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforCalss" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="beforCalss()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="beforCalss" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforCalss -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="test3" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="test3()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="test3" duration-ms="7" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterCalss()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="afterCalss" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="afterCalss()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="afterCalss" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterCalss -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="afterTest" is-config="true" duration-ms="4" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="aftersuite" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="aftersuite()[pri:0, instance:testNG.TestNGAnnotation2@62ee68d8]" name="aftersuite" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
       </class> <!-- testNG.TestNGAnnotation2 -->
       <class name="testNG.TestNGAnnotations">
-        <test-method status="PASS" signature="beformethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beformethod" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beformethod -->
-        <test-method status="PASS" signature="beforCalss()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beforCalss" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="beforCalss()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beforCalss" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforCalss -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="test1" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="test2" duration-ms="4" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beformethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beformethod" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="beformethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beformethod" is-config="true" duration-ms="0" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beformethod -->
-        <test-method status="PASS" signature="afterCalss()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterCalss" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="test1" duration-ms="2" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterCalss -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-08T06:35:43Z" finished-at="2018-07-08T06:35:43Z">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="test2" duration-ms="2" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="beformethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="beformethod" is-config="true" duration-ms="0" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beformethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterCalss()[pri:0, instance:testNG.TestNGAnnotations@735b5592]" name="afterCalss" is-config="true" duration-ms="1" started-at="2018-07-08T10:49:32Z" finished-at="2018-07-08T10:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterCalss -->
       </class> <!-- testNG.TestNGAnnotations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

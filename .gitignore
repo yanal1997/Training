@@ -1,7 +1,9 @@
 # Object file
+test-output/
 *.o
 *.html
 *.xml
 
 # Ada Library Information
 *.ali
+*.html
