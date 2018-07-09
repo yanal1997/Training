@@ -283,7 +283,6 @@ public class CalculatorApp extends Application {
 		char operator = 0;
 		int countDigit = 0;
 		int countBy_divid = 0;
-		System.out.println(equation);
 		if (equation.equals("")) {
 			return 0 + "";
 		}
