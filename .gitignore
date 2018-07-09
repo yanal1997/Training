@@ -1,19 +1,8 @@
-# Object file
-test-output/
-*.o
+*.class
+*.css
 *.html
 *.xml
-
-# Ada Library Information
-*.ali
-*.html
-testNG/test-output/testng-results.xml
-
-
-*.class
-target/
-classes/
-test-output/
-
-*.html
-testNG/test-output/old/Default suite/groups.html
+*.png
+*.gif
+test-output\
+testng-results
