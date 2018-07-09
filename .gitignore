@@ -6,3 +6,4 @@
 *.gif
 test-output\
 testng-results
+target\
