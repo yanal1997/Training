@@ -1,7 +1,6 @@
 package maven;
 
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,7 +9,7 @@ public class CalculatorAppTest {
 	String[] test = new String[15];
 	String[] result = new String[15];
 	CalculatorApp calcutator = new CalculatorApp();
-	@BeforeTest
+	@BeforeTest(alwaysRun=true)
 	public void setUp() {
 		//System.out.println("yanal");
 		test[0] = "5+2";
@@ -68,7 +67,7 @@ public class CalculatorAppTest {
 	public void enterEquationWithError(){//enter % or 5t+3
 		Assert.assertEquals( result[5], calcutator.operation(test[5]),"enter equation with equale sign ( 5+3= )");
 	}
-	@Test(groups={"positive"},dependsOnMethods={"setUp"})
+	@Test(groups={"positive"})
 	public void enterNumber(){
 		Assert.assertEquals(result[6], calcutator.operation(test[6]),"enter just enter number (55)");
 	}
@@ -82,7 +81,7 @@ public class CalculatorAppTest {
 	}
 	@Test(groups={"negative"})
 	public void enterEquationWithoutNumber(){
-		AssertJUnit.assertEquals(result[9],calcutator.operation(test[9]),"enter equation with error (5eew+3) ");
+		Assert.assertEquals(result[9],calcutator.operation(test[9]),"enter equation with error (5eew+3) ");
 	}
 	@Test(groups={"negative"}) 
 	public void enterDoubleEqualSign(){
