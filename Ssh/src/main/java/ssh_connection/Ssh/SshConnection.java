@@ -2,6 +2,7 @@ package ssh_connection.Ssh;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Properties;
 
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;
@@ -14,17 +15,15 @@ public class SshConnection {
 	private String user;
 	private String password;
 	private String command;
-	private int port = 22;
+	final int PORT = 22;// constant
 	private Session session;
 	private Channel channel;
 
-	public SshConnection(String host, String user, String password, String command) {
+	public SshConnection(String host, String user, String password) {
 		super();
 		this.host = host;
 		this.user = user;
 		this.password = password;
-		this.command = command;
-		connected();
 	}
 
 	public String getHost() {
@@ -60,11 +59,14 @@ public class SshConnection {
 	}
 
 	public void connected() {
-		java.util.Properties config = new java.util.Properties();
+		// java.util.Properties config = new java.util.Properties();
+		// java.util.Properties config = new java.util.Properties();
+		Properties config = new Properties();
+
 		config.put("StrictHostKeyChecking", "no");
 		JSch jsch = new JSch();
 		try {
-			session = jsch.getSession(user, host, port);
+			session = jsch.getSession(user, host, PORT);
 		} catch (JSchException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -78,10 +80,10 @@ public class SshConnection {
 			e.printStackTrace();
 		}
 		System.out.println("Connected");
-		command();
 	}
 
 	public void command() {
+
 		try {
 			channel = session.openChannel("exec");
 		} catch (JSchException e) {
@@ -97,7 +99,6 @@ public class SshConnection {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	public void printResult() throws IOException {
@@ -131,9 +132,12 @@ public class SshConnection {
 			} catch (Exception ee) {
 			}
 		}
+	}
+
+	public void disconnect() {
 		channel.disconnect();
 		session.disconnect();
-		System.out.println("DONE");
+		System.out.println("System is closed");
 	}
 
 }
