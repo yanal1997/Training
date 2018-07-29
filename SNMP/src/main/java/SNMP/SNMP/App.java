@@ -21,14 +21,36 @@ public class App {
 	private String oid;
 	private String ip;
 
+	public App() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public App(String ip, String oid) {
 		super();
 		this.oid = oid;
 		this.ip = ip;
-		 snmpGet();
 	}
 
 //	public static final int mSNMPVersion = 0; // 0 represents SNMP version=1
+
+	public String getOid() {
+		return oid;
+	}
+
+	public void setOid(String oid) {
+		this.oid = oid;
+		snmpGet();
+		
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
 
 	public String snmpGet()
 
