@@ -91,7 +91,7 @@ public class TelnetConnection {
 			// readUntil(prompt + " ");
 			return true; // connect OK
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 			return false; // connect fail
 		}
 	}

@@ -34,6 +34,7 @@ public class AppTest {
 			telnetConnection.disconnect();
 		
 		}
+		System.out.println(newImage+"***");
 		runNewImage(newImage, device);
 		waitUntilDeviceUp(device, timeout);
 				   runningImageName = getRunningImage(device);

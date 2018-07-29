@@ -6,57 +6,60 @@ public class AclTest {
 	@Test
 	public void aclTest() {
 		Device device = new Device("10.63.10.213", "lab", "lab");
-		findAclList("4", device);
-		TelnetConnection telnet = new TelnetConnection();
-		telnet.connect(device);
-		String result = telnet.sendCommand("show  access-list");
-		System.out.println(result);
-		telnet.disconnect();
-	}
-
-	public void aclConfiguration(int numberOfruls, Device device) {
-
-		TelnetConnection telnet = new TelnetConnection();
-		telnet.connect(device);
-		telnet.sendCommand("configure terminal");
-		telnet.sendCommand("access-list template " + numberOfruls);
-		telnet.sendCommand("exit");
-		telnet.disconnect();
+		// deleteAllAclList(device);
+		String acl = "aaaa";
+		// creatAcl(device, acl);
+		findAllAclList(device);
+		System.out.println("have acl list with '" + acl + "' name " + aclVerification(acl, device));
 
 	}
 
-	public void creatAcl(Device device, String ip) {
-		TelnetConnection telnet = new TelnetConnection();
-		telnet.connect(device);
-		telnet.sendCommand("configure terminal");
-		telnet.sendCommand("access-list " + ip + " permit any");
-		telnet.sendCommand("exit");
-		telnet.disconnect();
-
+	public void creatAcl(Device device, String name) {
+		name = "ip access-list standard " + name;
+		getOutputFromDevice(device, "configure terminal");
+		getOutputFromDevice(device, name);
+		getOutputFromDevice(device, "exit");
+		getOutputFromDevice(device, "exit");
 	}
 
-	public void deletAclList(Device device, String aclListIP) {
-		TelnetConnection telnet = new TelnetConnection();
-		telnet.connect(device);
-		telnet.sendCommand("configure terminal");
+	public void deleteAllAclList(Device device) {
+		String[] lists = findAllAclList(device);
+		getOutputFromDevice(device, "configure terminal");
 
-		telnet.sendCommand("no access-list " + aclListIP + " permit any");
-		telnet.disconnect();
+		for (int i = 2; i < lists.length - 1; i++) {
 
-	}
-
-	public void findAclList(String aclListIp, Device device) {
-		TelnetConnection telnet = new TelnetConnection();
-		telnet.connect(device);
-		String string = telnet.sendCommand("show access-list");
-		int exist = string.indexOf("Standard IP access list " + aclListIp);
-		telnet.disconnect();
-		if (exist == -1) {
-			creatAcl(device, aclListIp);
-		} else {
-			deletAclList(device, aclListIp);
+			getOutputFromDevice(device, "configure terminal");
+			getOutputFromDevice(device, "no ip access-list standard " + lists[i]);
 
 		}
+		getOutputFromDevice(device, "exit");
 	}
 
+	public String[] findAllAclList(Device device) {
+		String output = getOutputFromDevice(device, "show access-lists | inc Stand");
+		System.out.println("output from device:" + output);
+		String[] stringWithSpace = output.split("\n");
+		for (int i = 2; i < stringWithSpace.length - 1; i++) {
+			stringWithSpace[i] = stringWithSpace[i].substring(stringWithSpace[i].lastIndexOf(" "));
+		}
+		return stringWithSpace;
+	}
+
+	public String getOutputFromDevice(Device device, String command) {
+		TelnetConnection telnet = new TelnetConnection();
+		telnet.connect(device);
+		String result = telnet.sendCommand(command);
+		telnet.disconnect();
+		return result;
+	}
+
+	public boolean aclVerification(String name, Device device) {
+		String[] aclLists = findAllAclList(device);
+		for (int i = 0; i < aclLists.length; i++) {
+			if (aclLists[i].contains(name)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
