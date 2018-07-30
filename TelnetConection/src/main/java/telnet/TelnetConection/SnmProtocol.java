@@ -1,4 +1,5 @@
-package SNMP.SNMP;
+package telnet.TelnetConection;
+
 import org.snmp4j.CommunityTarget;
 import org.snmp4j.PDU;
 import org.snmp4j.Snmp;
@@ -12,45 +13,22 @@ import org.snmp4j.smi.UdpAddress;
 import org.snmp4j.smi.VariableBinding;
 import org.snmp4j.transport.DefaultUdpTransportMapping;
 
-public class App {
+public class SnmProtocol {
 
-	public static final String READ_COMMUNITY = "public";
+	Device device;
 
-	public static final String WRITE_COMMUNITY = "public";
-
-	private String oid;
-	private String ip;
-
-	public App() {
+	public SnmProtocol() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public App(String ip, String oid) {
+	public SnmProtocol(Device device) {
 		super();
-		this.oid = oid;
-		this.ip = ip;
+		this.device = device;
+
 	}
 
-//	public static final int mSNMPVersion = 0; // 0 represents SNMP version=1
-
-	public String getOid() {
-		return oid;
-	}
-
-	public void setOid(String oid) {
-		this.oid = oid;
-		snmpGet();
-		
-	}
-
-	public String getIp() {
-		return ip;
-	}
-
-	public void setIp(String ip) {
-		this.ip = ip;
-	}
+	// public static final int mSNMPVersion = 0; // 0 represents SNMP version=1
 
 	public String snmpGet()
 
@@ -62,9 +40,9 @@ public class App {
 
 		{
 
-			OctetString community1 = new OctetString(READ_COMMUNITY);
+			OctetString community1 = new OctetString(device.getReadCommunty());
 
-			ip = ip + "/" + 161;
+			String ip = device.getHost() + "/" + 161;
 
 			Address targetaddress = new UdpAddress(ip);
 
@@ -90,7 +68,7 @@ public class App {
 
 			Snmp snmp;
 
-			pdu.add(new VariableBinding(new OID(oid)));
+			pdu.add(new VariableBinding(new OID(device.getOid())));
 
 			pdu.setType(PDU.GET);
 
@@ -137,8 +115,8 @@ public class App {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
- 
-		System.out.println(str);
+
+		// System.out.println(str);
 		return str;
 
 	}

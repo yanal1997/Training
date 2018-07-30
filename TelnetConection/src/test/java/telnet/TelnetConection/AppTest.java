@@ -13,18 +13,15 @@ public class AppTest {
 	// Device device;
 
 
-	@Test
+	@Test(enabled=false)
 	public void upgradeSoftwareImage() throws InterruptedException {// upgradeSoftwareImage
 		int timeout=6000000;
 
 		final Device device = new Device("10.63.10.213", "lab", "lab");
 		String runningImageName = getRunningImage(device);
 		System.out.println("runningImageName is:" + runningImageName);
-		
 		String newImage=getNewImage(runningImageName);
 		System.out.println("the new image to distribute is: "+newImage);
-		
-		
 		
 		if (!isImageOnDevice(device, newImage)) {
 			System.out.println("is the new image in device " + true);
@@ -50,6 +47,24 @@ public class AppTest {
 		
 		
 		}
+	@Test 
+	public void SmnpCheck(){
+		Device device=new Device("10.63.10.213", "lab", "lab", "public", "public");
+		String telnetResult=getOutputFromDevice(device, "show version | include board");
+		device.setOid(".1.3.6.1.4.1.9.3.6.3.0");
+		SnmProtocol snmp=new SnmProtocol(device);
+
+		String snmpResult=snmp.snmpGet();
+		if(telnetResult.contains(snmpResult)){
+			System.out.println("The result is correct");
+		}
+		else{
+			System.out.println("error");
+		}
+		
+		
+		
+	}
 		
 		
 		
@@ -59,7 +74,6 @@ public class AppTest {
 			long time=10000;
 		// TODO Auto-generated method stub
 			TelnetConnection connect=new TelnetConnection();
-int i=0;
        Thread.sleep(10000);
 		while(timeout>0){
 			try {
@@ -75,15 +89,9 @@ int i=0;
 			
 			catch (Exception e) {
 				// TODO: handle exception
-		
 					Thread.sleep(time);
-
-				
 				timeout-=time;
-				
-
-				
-			}		 i++; }
+			}		  }
 
 	}
 
@@ -191,5 +199,13 @@ System.out.println("************************************************************
 			return image+".bin";
 		}
 	}
+	public String getOutputFromDevice(Device device, String command) {
+		TelnetConnection telnet = new TelnetConnection();
+		telnet.connect(device);
+		String result = telnet.sendCommand(command);
+		telnet.disconnect();
+		return result;
+	}
+
 
 }
