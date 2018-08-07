@@ -6,7 +6,6 @@ public class Device {
 	private String  password;
 	private String writeCommunty;
 	private String readCommunty;
-	private String oid;
 	private String snmpIp;
 
 	public Device(String host, String userName, String password,String writeCommunty,String readCommunty) {
@@ -50,14 +49,7 @@ public class Device {
 	public void setReadCommunty(String readCommunty) {
 		this.readCommunty = readCommunty;
 	}
-	public String getOid() {
-		return oid;
-	}
-	public void setOid(String oid) {
-		
-		this.oid = oid;
-		
-	}
+	
 	public String getUserName() {
 		return userName;
 	}

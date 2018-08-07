@@ -16,21 +16,24 @@ import org.snmp4j.transport.DefaultUdpTransportMapping;
 public class SnmProtocol {
 
 	Device device;
+	String oid;
 
 	public SnmProtocol() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public SnmProtocol(Device device) {
-		super();
+	public String SnmProtocol(Device device, String oid) {
 		this.device = device;
+		this.oid=oid;
+		return snmpGetResult();
+		
 
 	}
 
 	// public static final int mSNMPVersion = 0; // 0 represents SNMP version=1
 
-	public String snmpGet()
+	public String snmpGetResult()
 
 	{
 
@@ -41,8 +44,8 @@ public class SnmProtocol {
 		{
 
 			OctetString community1 = new OctetString(device.getReadCommunty());
-
 			String ip = device.getHost() + "/" + 161;
+
 
 			Address targetaddress = new UdpAddress(ip);
 
@@ -68,7 +71,7 @@ public class SnmProtocol {
 
 			Snmp snmp;
 
-			pdu.add(new VariableBinding(new OID(device.getOid())));
+			pdu.add(new VariableBinding(new OID(oid)));
 
 			pdu.setType(PDU.GET);
 
