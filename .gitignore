@@ -7,3 +7,4 @@
 test-output\
 testng-results
 target\
+*.classpath
