@@ -1,10 +1,13 @@
 *.class
 *.css
 *.html
-*.xml
+testng.xml
 *.png
 *.gif
 test-output\
 testng-results
 target\
 *.classpath
+Command line test.xml
+testng-results.xml
+testng-failed.xml
