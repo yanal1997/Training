@@ -1,3 +1,5 @@
+package maven;
+
 
 
 public class Welcome {

@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 public class GetNameForVidoOnYoutube {////
 	@Test
 	public void openWebDriver() throws InterruptedException {
+		System.setProperty("webdriver.firefox.driver", "C://Program Files//Mozilla Firefox//firefox.exe");
 
 		WebDriver webDriver = new FirefoxDriver();
 		webDriver.get("http://www.google.com");
