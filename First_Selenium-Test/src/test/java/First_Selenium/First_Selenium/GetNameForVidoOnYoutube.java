@@ -11,9 +11,10 @@ import org.testng.annotations.Test;
 public class GetNameForVidoOnYoutube {////
 	@Test
 	public void openWebDriver() throws InterruptedException {
-		System.setProperty("webdriver.firefox.driver", "C://Program Files//Mozilla Firefox//firefox.exe");
 
+		
 		WebDriver webDriver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "C://Users//owner//Desktop//New folder (2)");
 		webDriver.get("http://www.google.com");
 		WebElement googleSearchBar = webDriver.findElement(By.xpath("//*[@id=\"lst-ib\"]"));
 		googleSearchBar.sendKeys("youtube");
